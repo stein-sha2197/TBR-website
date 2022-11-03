@@ -1,0 +1,318 @@
+/* styles across devices */
+body {
+    background-color: #fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+h1{
+    color:#AA336A;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h2{color:#4F7178;}
+a:link{
+    color:palevioletred;
+    text-decoration: none;
+    font-size: 1em;
+}
+a:visited {
+    color:palevioletred;
+    text-decoration: none;
+}
+a:hover{background-color: #F2DEBD;}
+a:active{color:darkred;}
+button{
+    display:grid;
+    border-style: none;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+button:hover{
+    background-color: #F2DEBD;
+}
+footer{color: #B28735;}
+address{color:#4F7178}
+nav {grid-area: nav;}
+section {grid-area: section;}
+header{grid-area:header;}
+main{grid-area:main;}
+article{grid-area:article;}
+aside{grid-area:aside;}
+footer{grid-area:footer;}
+.menu {display:block;}
+
+/* show hide pages */
+#home {
+    display:block;
+}
+#navigation{
+    display:none;
+}
+#join {
+    display:none;
+}
+#aboutTBR {
+    display:none;
+}
+#currentlyReading {
+    display:none;
+}
+#previouslyRead {
+    display:none;
+}
+
+/* mobile devices*/
+@media only screen and (max-width: 767px) {
+/* layout */
+    .grid-body{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 25px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            ;
+    }
+    .flex-nav{
+        display: flex;
+        border: 5px double palevioletred;
+        border-radius: 4px;
+        margin: 10px;
+    }
+    .nav-items{
+        margin: 10px;
+        padding:10px;
+    }
+    .flex-section{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 4px;
+        align-content: flex-start;
+        border: 5px double palevioletred;
+        margin: 10px;
+    }
+    .flex-section>:last-child{
+        order: -1;
+    }
+    .header-items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 20px;
+        order:-2;
+    }
+    .general-items {
+        margin:15px;
+    } 
+    .general-items > :first-child{
+        border-bottom: 1px solid #B28735;
+    }
+/* images, links, and buttons */
+    .logo-img {
+        width:50vw;
+    }
+    .menu-img {
+        width: 6vw;
+    }
+    a:link{
+        font-size: 1.5em;
+    }
+    iframe{
+        width: 50vw;
+        height: 30vw;
+    }
+    #prof-img{
+        width: 30vw;
+        border-radius: 1000px; 
+     }
+     #bookstack{
+        width: 50vw;
+     }
+/* font styles */
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 2em;
+    }
+    h3, h4, h5, h6, body{
+        font-size: 1em;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 768px) {
+/* layout */
+    .grid-body{
+        display: grid;
+        grid-template-columns: repeat(1, 4fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 25px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            ;
+    }
+    .flex-nav{
+        display: flex;
+        flex-wrap: wrap;
+        border: 5px double palevioletred;
+        border-radius: 4px;
+        margin: 10px;
+    }
+    .nav-items{
+        margin: 10px;
+        padding:10px;
+    }
+    .flex-section{
+        display:flex;
+        flex-direction: column;
+        border-radius: 4px;
+        border: 5px double palevioletred;
+        border-top: none;
+        margin: 10px;
+    }
+    .header-items {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin: 10px;
+        padding:10px;
+    }
+    .general-items {
+        margin: 10px;
+        padding:10px;
+    } 
+    .general-items > :first-child{
+        border-bottom: 1px solid #B28735;
+    }
+/* images, links, and buttons */
+    .logo-img {
+        width: 35vw;
+    }
+    .menu-img {
+        width: 4vw;
+    }
+    iframe{
+        width: 80vw;
+        height: 60vw;
+    }
+    a:link{font-size: 2em;}
+    #prof-img{
+       width: 20vw;
+       border-radius: 1000px; 
+    }
+    #bookstack{
+        width: 50vw;
+     }
+/* font styles */
+    h1,  h2{
+        font-size: 2em;
+    }
+    h3, h4, h5, h6{
+        font-size: 2em;
+    }
+    p, address{
+       font-size: 1em;
+    }
+}
+
+/*desktop */
+@media only screen and (min-width: 1024px) {
+/* layout */
+    .grid-body{
+        display: grid;
+        border: 10px double palevioletred;
+        grid-template-columns: repeat(1, 4fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 100px;
+        grid-template-areas:
+            "nav nav nav nav"
+            "section section section section"
+            ;
+    }
+    .flex-nav{
+        display: flex;
+        flex-wrap: wrap;
+        border: none;
+        border-bottom: 2px solid #B28735;
+        margin: 20px;
+    }
+    .nav-items{
+        margin: 10px;
+        padding:10px;
+    }
+    .flex-section{
+        display:grid;
+        grid-template-columns: repeat(1, 4fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin: 25px;
+        grid-template-areas:
+            "header header header header"
+            "main main main aside"
+            "article article article aside"
+            "footer footer footer footer"
+            ;
+        border: none;
+        margin: 20px;
+    }
+    .header-items {
+        display:flex;
+        flex-direction: column-reverse;
+        flex-wrap:wrap;
+        align-items: flex-start;
+    }
+    .flex-section> aside{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flex-section> :last-child{
+        background-color:#F2DEBD;
+    }
+    .general-items {
+        margin: 10px;
+        padding:10px;
+    } 
+    /* images, links, and buttons */
+    .logo-img {
+        width: 15vw;
+    }
+    .menu-img {
+        width: 1.5vw;
+    }
+    iframe{
+        width: 40vw;
+        height: 30vw;
+    }
+    #prof-img{
+        width: 10vw;
+        border-radius: 1000px;
+    } 
+    #bookstack{
+        width: 50vw;
+     }
+    a:link{font-size: 2em;}
+    a:visited {
+        color:palevioletred;
+        text-decoration: none;
+    }
+    /* font styles */
+    h1,  h2{
+        font-size: 3em;
+    }
+    h3, h4{
+        font-size: 2em;
+    }
+    h5, h6{
+        font-size: 1.5em;
+    }
+    p, address{
+    font-size: 1em;
+    }
+}
+
+

@@ -1,0 +1,307 @@
+<!-- Author: Sharon Steinke -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TBR Book Club</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles-sheet.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body class="grid-body">
+        <nav class="flex-nav"> <!-- NAVIGATION -->
+            <div class="nav-items">
+                <button onclick="toggleMenu()">
+                    <img src="images/bars-solid.svg" alt="menu-icon" class="menu-img">
+                </button>
+                <h1>TBD Book Club</h1>
+                <ul id="navigation">
+                    <button onclick="goHome()">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                    </button>
+
+                    <button onclick="goJoin()">
+                        <li>
+                            <a href="#join">Join</a>
+                        </li>
+                    </button>
+
+                    <button onclick="goAboutTBR()">
+                        <li>
+                            <a href="#aboutTBR">About TBR</a>
+                        </li>
+                    </button>
+
+                    <button onclick="goCurrentlyReading()">
+                        <li>
+                            <a href="#currentlyReading">Currently Reading</a>
+                        </li>
+                    </button>
+
+                    <button onclick="goPreviouslyRead()">
+                        <li>
+                            <a href="#previouslyRead">Previously Read</a>
+                        </li>
+                    </button>
+                </ul>  
+            </div>
+            
+        </nav>
+
+        <section id="home"> <!-- HOME -->
+            <div class="flex-section">
+                <header class="header-items">
+                <h2>Home</h2>
+                <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button> 
+                </header>
+
+                <main class="general-items">
+                    <h3>Welcome</h3>
+                    <p><abbr title="To Be Read">TBR</abbr> is a book club dedicated to giving its members a chance to read a good (or bad) book. </p>
+                    <p>Too often the excuse,<em> there is never enough time</em> destroys a would-be reader!</p>
+                    <p>TBR is here to remind members to read through social obligations!</p>
+                    <p>However, it is never necessary to start or finish any book. You are always welcome at TBR meetings!</p>
+
+                    <details>
+                        <ul>
+                            <li><a href="#join">Join TBR</a></li>
+                            <li><a href="#aboutTBR">Learn more</a></li>
+                            <li><a href="#PreviouslyRead">What we've read</a></li>
+                            <li><a href="#CurrentlyReading">What we're reading</a></li>
+                            </ul>
+                    </details>
+                </main>
+
+                <article class="general-items">
+                    <h3>Meet TBR</h3>
+                    <p>Hey, how's it going?</p> <p> I'm TBR's host, Sharon. </p> <p>I can't wait to meet you!</p>
+                    <figure>
+                        <img src="images/prof-pic.jpg" alt="image" id="prof-img">
+                        <figcaption>TBR's Over Lord</figcaption>
+                    </figure>
+                    
+                </article>
+
+                <aside class="general-items">
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>    
+        </section>
+
+        <section id="join"> <!-- JOIN -->
+            <div class="flex-section">
+                <header class="header-items">
+                    <h2>Join</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>Join us</h3>
+                    <p>We meet regulary, about once a month.
+                        We'd love to have you come and share what you loved (or didn't love)
+                        about our latest read!</p>
+                    
+                </main>
+
+                <article class="general-items">
+                </article>
+
+                <aside class="general-items">
+                    <figure >
+                        <img src="images/bookstack.svg" alt="image" id="bookstack">
+                    </figure>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>
+        </section>
+
+        <section id="aboutTBR"> <!-- ABOUT TBR -->
+            <div class="flex-section">    
+                <header class="header-items">
+                    <h2>About TBR</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>Main</h3>
+                    <iframe
+                        src="https://www.youtube.com/embed/T5M0JXJn2yk">
+                    </iframe>
+                </main>
+
+                <article class="general-items">
+                    <h4>Article</h4>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                    <figure >
+                        <h6>title of image</h6>
+                        <img src="" alt="image">
+                        <figcaption>descriptive image text</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="general-items">
+                    <h5>Aside</h5>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>
+        </section>
+
+        <section id="currentlyReading"> <!-- CURRENTLY READING -->
+            <div class="flex-section"> 
+                <header class="header-items">
+                    <h2>Currently Reading</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button>
+                </header>
+
+                <main class="general-items">
+                    <h3>Main</h3>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                </main>
+
+                <article class="general-items">
+                    <h45>Article</h4>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                    <figure >
+                        <h6>title of image</h6>
+                        <img src="" alt="image">
+                        <figcaption>descriptive image text</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="general-items">
+                    <h5>Aside</h5>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>    
+        </section>
+
+        <section id="previouslyRead"> <!-- Previously Read -->
+            <div class="flex-section"> 
+                <header class="header-items">
+                    <h2>Previously Read</h2>
+                    <button onclick="goHome()"><img src="images/TBR.svg" alt="logo" class="logo-img"></button> 
+                </header>
+
+                <main class="general-items">
+                    <h3>Main</h3>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                </main>
+
+                <article class="general-items">
+                    <h4>Article</h4>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                    <figure >
+                        <h6>title of image</h6>
+                        <img src="" alt="image">
+                        <figcaption>descriptive image text</figcaption>
+                    </figure>
+                </article>
+
+                <aside class="general-items">
+                    <h5>Aside</h5>
+                    <p>some text here</p>
+                    <p>some more text here</p>
+                    <p>more and more</p>
+                    <p>adding lots of content</p>
+                    <p>content content content</p>
+                    <aside>heres some aside content</aside>
+                </aside>
+
+                <footer class="general-items">
+                    <p>DM me to join TBR</p>
+                    <p><em>coming soon!</em></p>    
+                    <details><p>My handles</p>
+                        <ul>
+                           <li>Facebook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                        </ul>
+                    </details>
+                </footer>
+            </div>    
+        </section>
+    </body>
+</html>
